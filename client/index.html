@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Quest - Multiplayer Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas"></canvas>
+        <div id="ui">
+            <div id="playerInfo">
+                <span id="username">Loading...</span>
+                <div id="healthBar" class="health-bar">
+                    <div id="healthFill" class="health-fill"></div>
+                </div>
+            </div>
+            <div id="players-list"></div>
+        </div>
+        <div id="joinScreen" class="join-screen">
+            <h1>Browser Quest</h1>
+            <input type="text" id="usernameInput" placeholder="Enter your name..." maxlength="20">
+            <button id="joinBtn">Join Game</button>
+            <p class="info">Controls: WASD or Arrow Keys to move | Click to shoot</p>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
